@@ -5,21 +5,21 @@
 class Webtor < Formula
   desc "CLI for the webtor.io torrent-streaming API"
   homepage "https://webtor.io"
-  version "1.6.2"
+  version "1.6.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.2/webtor_1.6.2_darwin_amd64.tar.gz"
-      sha256 "1a8f25d325af880bc4519840ab1bc136f501e714a4a031dc07f3ecf583cdfa42"
+      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.3/webtor_1.6.3_darwin_amd64.tar.gz"
+      sha256 "e69a24273c6d7585239b7fccd5583db91918f6799b123a509ff8ccfeff6efe0d"
 
       define_method(:install) do
         bin.install "webtor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.2/webtor_1.6.2_darwin_arm64.tar.gz"
-      sha256 "9b54622f1f066ce31880ffb2043574b491f8c24a663af97ccd6833ea70601191"
+      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.3/webtor_1.6.3_darwin_arm64.tar.gz"
+      sha256 "5f56d89fbb00ccea14ccc1ac481b07914d26775093ee8d04e6ca0550044a62d0"
 
       define_method(:install) do
         bin.install "webtor"
@@ -29,15 +29,15 @@ class Webtor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.2/webtor_1.6.2_linux_amd64.tar.gz"
-      sha256 "729a7764cba034138884fced3aaa0ec2b443acae7d201c610fa2bbc93b73a379"
+      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.3/webtor_1.6.3_linux_amd64.tar.gz"
+      sha256 "c0aa58453dea9151885c5615eb5b8e2ae21ef17d2306ccb2a57f6594fe57bad7"
       define_method(:install) do
         bin.install "webtor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.2/webtor_1.6.2_linux_arm64.tar.gz"
-      sha256 "bf4baf9e86672f124d1ae46f2713536f8750ca045a9976c397850b13d67306d8"
+      url "https://github.com/webtor-io/webtor-cli/releases/download/v1.6.3/webtor_1.6.3_linux_arm64.tar.gz"
+      sha256 "d02cefc8f5567db2e175c47faa57297c15929934cda9399fd569d5cae3e27de6"
       define_method(:install) do
         bin.install "webtor"
       end
